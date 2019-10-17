@@ -84,8 +84,8 @@ nav li {
   }
 
   #menu img{
-    width: 50px; 
-    height: 50px; 
+    width: 50px;
+    height: 50px;
     float: right;
   }
 
@@ -97,8 +97,8 @@ nav li {
   }
 
   #cruz img{
-    width: 30px; 
-    height: 30px; 
+    width: 30px;
+    height: 30px;
     float: left;
   }
 
@@ -111,10 +111,10 @@ nav li {
   }
 
   #imagen img{
-    width: 80px; 
-    height: 80px; 
-    float: left; 
-    
+    width: 80px;
+    height: 80px;
+    float: left;
+
   }
 
 
@@ -137,9 +137,9 @@ nav li {
   }
 
   #like img{
-    width: 100%; 
+    width: 100%;
     height: 100%;
-    
+
   }
   #comentar{
     float:left;
@@ -150,7 +150,7 @@ nav li {
   }
 
   #comentar img{
-    width: 100%; 
+    width: 100%;
     height: 100%;
   }
   #compartir{
@@ -162,7 +162,7 @@ nav li {
   }
 
   #compartir img{
-    width: 100%; 
+    width: 100%;
     height: 100%;
   }
 
@@ -499,7 +499,7 @@ td{
   margin-left: 1%;
   height: 70%;
   width: 100%;
- 
+
 }
 
 .write_comment{
@@ -533,4 +533,57 @@ td{
 
 
   }
+}
+
+/* Popup container */
+.popup {
+ position: relative;
+ display: inline-block;
+ cursor: pointer;
+}
+
+/* The actual popup (appears on top) */
+.popup .popuptext {
+ visibility: hidden;
+ width: 160px;
+ background-color: #555;
+ color: #fff;
+ text-align: center;
+ border-radius: 6px;
+ padding: 8px 0;
+ position: absolute;
+ z-index: 1;
+ bottom: 125%;
+ left: 50%;
+ margin-left: -80px;
+}
+
+/* Popup arrow */
+.popup .popuptext::after {
+ content: "";
+ position: absolute;
+ top: 100%;
+ left: 50%;
+ margin-left: -5px;
+ border-width: 5px;
+ border-style: solid;
+ border-color: #555 transparent transparent transparent;
+}
+
+/* Toggle this class when clicking on the popup container (hide and show the popup) */
+.popup .show {
+ visibility: visible;
+ -webkit-animation: fadeIn 1s;
+ animation: fadeIn 1s
+}
+
+/* Add animation (fade in the popup) */
+@-webkit-keyframes fadeIn {
+ from {opacity: 0;}
+ to {opacity: 1;}
+}
+
+@keyframes fadeIn {
+ from {opacity: 0;}
+ to {opacity:1 ;}
 }
