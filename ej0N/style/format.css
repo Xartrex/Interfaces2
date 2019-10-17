@@ -1,0 +1,536 @@
+#header{
+    position: absolute;
+    right: 0%;
+    top: 0%;
+    background-image: url("../images/back.jpeg");
+    padding: 0%; /*los botones pegaos a los extremos, sin padding*/
+    height: 10%;
+    width: 100%;
+}
+
+
+nav li a {
+    float: right;
+    background-color: transparent;
+    color: #fff; /*text color*/
+    text-decoration: none;
+    padding: 1%;
+    width: 10%;
+    text-align: center;
+    /*tamaño bloque de botones*/
+}
+
+nav li {
+    display: inline;/*mostrar botones en horizontal*/
+
+}
+
+  li a:hover:not(.active) { /*pasar raton por encima de boton*/
+    background-color: red;
+    color: white; /*text color*/
+
+  }
+
+
+  h1{ /*Hace referencia al titulo de Iphone 11*/
+    height:70%;
+    width:70%;
+    font-size: 200%;
+    margin-left: 10%;
+    margin-top: 10%;
+    color: white;
+  }
+
+  h2{
+    height:120%;
+    width:100%;
+    font-size:100%;
+    margin-left: 70%;
+    margin-top:10%;
+    text-align: right;
+  }
+
+  #titulo{ /*Hace referencia a los otros dos titulos*/
+    height:30px;
+    width:250px;
+    font-size: 65%;
+    margin-left: 10%;
+    margin-top: 10%;
+
+  }
+
+  #columna{ /*los 3 divs grandes*/
+    font-style: oblique;
+    position: relative;
+    padding-bottom: 1%;
+    height:100%;
+    width:30%;
+    /*border:3px solid black;*/
+    float: left;
+    color: black;
+    margin-left:1%;
+    margin-top:8%;
+    background-color: #fff;
+    background-image: url("../images/fondo.jpg");
+
+  }
+
+  #menu{
+    height: 50%;
+    width:50%;
+    float: left;
+    margin-left: 45%;
+    margin-top: 3%;
+  }
+
+  #menu img{
+    width: 50px; 
+    height: 50px; 
+    float: right;
+  }
+
+  #cruz{ /*cruz roja de los divs*/
+    height: 5%;
+    width: 5%;
+    float:left;
+    margin-left:90%;
+  }
+
+  #cruz img{
+    width: 30px; 
+    height: 30px; 
+    float: left;
+  }
+
+  #imagen{ /*imagenes de las columnas*/
+    height: 50%;
+    width: 50%;
+    float: left;
+    margin-top: 1%;
+    margin-left: 1%;
+  }
+
+  #imagen img{
+    width: 80px; 
+    height: 80px; 
+    float: left; 
+    
+  }
+
+
+  #emoticonos{
+    height: 90%;
+    width: 90%;
+    margin-top:10%;
+    float: left;
+    padding-bottom: 4%;
+
+
+  }
+
+  #like{
+    float:left;
+    height:20%;
+    width:20%;
+    margin-left:2%;
+    margin-top:1%;
+  }
+
+  #like img{
+    width: 100%; 
+    height: 100%;
+    
+  }
+  #comentar{
+    float:left;
+    height:20%;
+    width:20%;
+    margin-left:1%;
+    margin-top:1%;
+  }
+
+  #comentar img{
+    width: 100%; 
+    height: 100%;
+  }
+  #compartir{
+    float:left;
+    height:20%;
+    width:20%;
+    margin-left:1%;
+    margin-top:1%;
+  }
+
+  #compartir img{
+    width: 100%; 
+    height: 100%;
+  }
+
+  #fecha{
+    float:left;
+    font-size: 100%;
+    height: 5%;
+    width: 5%;
+    margin-left: 3%;
+    margin-top: 5%;
+  }
+  #hora{
+    float:left;
+    font-size: 100%;
+    height:5%;
+    width:5%;
+    margin-left: 25%;
+    margin-top:5%;
+  }
+
+  #hijo{
+    height:100%;
+    padding: 2%;
+    width:85%;
+    border:4px solid black;
+    float: left;
+    color: black;
+    margin: 4%;
+    background-color: white;
+  }
+
+
+body{
+  background-image: url("../images/Mr_Robot.png");
+  background-attachment: fixed; /*Al hacer scroll la img no se mueve*/
+  background-size: 100%;
+
+}
+
+  section{
+
+    margin-bottom: 10%;
+    margin-left: 3%;
+    margin-right: 3%;
+    padding: 1%;
+    height: 90%;
+    width: 90%;
+  }
+
+  .tooltip {
+    position: relative;
+    display: inline-block;
+    border-bottom: 1px dotted black;
+  }
+
+  .tooltip .tooltiptext {
+    visibility: hidden;
+    width: 300%;
+    background-color: #555;
+    color: #fff;
+    text-align: center;
+    border-radius: 6px;
+    padding: 1%;
+    position: absolute;
+    z-index: 1;
+    bottom: 35%;
+    left: 50%;
+    margin-left: -20%;
+    opacity: 0;
+    transition: opacity 0.3s;
+  }
+
+  .tooltip .tooltiptext::after {
+    content: "";
+    position: absolute;
+    top: 100%;
+    left: 50%;
+
+    border-style: solid;
+    border-color: #555 transparent transparent transparent;
+  }
+
+  .tooltip:hover .tooltiptext {
+    visibility: visible;
+    opacity: 1;
+  }
+
+footer{
+  text-align: center;
+  color: white;
+  margin-left:0;
+  position: relative;
+  height:100px;
+  margin-top: -100px;
+  background-image: url("../images/back.jpeg");
+  clear: both;
+ /* margin-top: 90%;*/
+
+}
+
+footer a{
+  color: white;
+}
+
+
+/*clases de los 3 pops up ----------------------------------*/
+
+.modal-contenido{
+  background-color:white;
+  width:80%;
+  height:70%;
+  padding: 10px 20px;
+  margin-left: 6%;
+  margin-top:10%;
+  margin-bottom: 15%;
+  z-index: 99; /*prioridad, se coloca encima del resto, se supone*/
+  overflow: auto;/*without scroll bar*/
+}
+
+.modal{
+
+  background-color: rgba(0,0,0,.8);/*color fuera del pop up*/
+  position:fixed; /*con respecto al navegador*/
+  top:0;
+  right:0;
+  bottom:0;
+  left:0;
+  opacity:0;
+  z-index: 2;
+  pointer-events:none;
+  transition: all 1s;
+}
+#miModal:target{
+  opacity:100;
+  pointer-events:auto;
+}
+
+#miModal img{
+  height:100%;
+  width: 100%;
+  margin: 10%;
+}
+
+#miModal2 img{
+  height:100%;
+  width: 100%;
+  margin: 10%;
+}
+
+#miModal3 img{
+  height:100%;
+  width: 100%;
+  margin: 10%;
+}
+
+#miModal2:target{
+  opacity:100;
+  pointer-events:auto;
+}
+
+#miModal3:target{
+  opacity:100;
+  pointer-events:auto;
+}
+
+.modal-contenido img{
+  float:left;
+  margin-left:0;
+
+}
+
+.image_pop{
+    float: left;
+    height:90%;
+    width: 30%;
+    margin: 2%;
+}
+
+.text_pop{
+  float:right;
+  height:100%;
+  width: 60%;
+  margin: 2%;
+  overflow: auto;
+}
+
+td{
+  width: 50%;
+}
+
+#pop_sam{
+  float:right;
+  height:100%;
+  width: 60%;
+  margin: 2%;
+  overflow: auto;
+
+}
+
+#huawei_pop{
+  float:right;
+  height:100%;
+  width: 60%;
+  margin: 2%;
+  overflow: auto;
+
+
+}
+
+.emoticonos_pop{
+  float:left;
+  width: 28%;
+  height: 15%;
+  margin: 2%;
+
+}
+
+.comentar_pop{
+
+  margin-left:45%;
+  height:10%;
+  width:10%;
+}
+
+.like_pop{
+  float:left;
+  height:10%;
+  width:10%;
+}
+
+.compartir_pop{
+  float:right;
+  height: 10%;
+  width: 10%;
+}
+
+.time_pop{
+
+  float:right;
+  width: 28%;
+  height: 10%;
+  right:0;
+}
+
+.fecha_pop{
+  float:left;
+  width: 30%;
+  height: 10%;
+}
+.hora_pop{
+  float:right;
+  width: 30%;
+  height: 10%;
+}
+
+.share{
+  width:100%;
+  height: 60%;
+  margin-top: 55%;
+}
+
+.users{
+  height: 80%;
+  width: 100%;
+
+}
+
+.users img{
+  width: 180%;
+  height: 180%;
+}
+
+.users1{
+  float:left;
+  height: 30%;
+  width: 17%;
+  margin-bottom: 2%;
+  text-align: center;
+}
+
+.users3{
+  margin-left: 17%;
+  height: 30%;
+  width: 17%;
+  margin-bottom: 2%;
+}
+
+.users2{
+  float:left;
+  height: 30%;
+  width: 17%;
+}
+
+.users4{
+  margin-left: 17%;
+  height: 30%;
+  width: 17%;
+}
+
+.usimg{
+  margin-top: 5%;
+  margin-left:5%;
+  float:left;
+  height:70%;
+  width:25%;
+}
+
+.us_text{
+  margin-top: 12%;
+  margin-right: 10%;
+  text-align: left;
+  width: 50%;
+  float:right;
+}
+
+.add_user{
+  position:relative;
+  margin-left: 55%;
+  margin-top: -15%;
+  height: 30%;
+  width: 7%;
+  border: 3px solid black;
+}
+
+.user_comments{
+  width: 100%;
+  height: 100%;
+  margin-top: 1%;
+  margin-bottom: 5%;
+  border:3px solid black;
+}
+
+.comment_text{
+  margin-left: 1%;
+  height: 70%;
+  width: 100%;
+ 
+}
+
+.write_comment{
+  float:left;
+  height: 10%;
+  width: 87%;
+  border:3px solid black;
+  margin-left: 1%;
+}
+
+.send{
+  text-align: center;
+  float:right;
+  margin-right: 3%;
+  width: 7%;
+  height: 10%;
+  border:3px solid black;
+
+
+}
+@media only screen and (max-width: 768px) {/*700 x 480*/
+  #columna{
+    width: 45%;
+  }
+}
+@media only screen and (max-width: 600px) {/*600 x 480*/
+  #columna{
+
+    width:95%;
+    /*border:3px solid black;*/
+
+
+  }
+}
