@@ -67,10 +67,8 @@ nav li {
     width:30%;
     /*border:3px solid black;*/
     float: left;
-    color: black;
     margin-left:1%;
     margin-top:8%;
-    background-color: #fff;
     background-image: url("../images/fondo.jpg");
 
   }
@@ -89,20 +87,20 @@ nav li {
     float: right;
   }
 
-  #cruz{ /*cruz roja de los divs*/
+  .cruz{ /*cruz roja de los divs*/
     height: 5%;
     width: 5%;
     float:left;
     margin-left:90%;
   }
 
-  #cruz img{
+  .cruz img{
     width: 30px;
     height: 30px;
     float: left;
   }
 
-  #imagen{ /*imagenes de las columnas*/
+  .imagen{ /*imagenes de las columnas*/
     height: 50%;
     width: 50%;
     float: left;
@@ -110,7 +108,7 @@ nav li {
     margin-left: 1%;
   }
 
-  #imagen img{
+  .imagen img{
     width: 80px;
     height: 80px;
     float: left;
@@ -118,7 +116,7 @@ nav li {
   }
 
 
-  #emoticonos{
+  .emoticonos{
     height: 90%;
     width: 90%;
     margin-top:10%;
@@ -128,7 +126,7 @@ nav li {
 
   }
 
-  #like{
+  .like{
     float:left;
     height:20%;
     width:20%;
@@ -136,12 +134,12 @@ nav li {
     margin-top:1%;
   }
 
-  #like img{
+  .like img{
     width: 100%;
     height: 100%;
 
   }
-  #comentar{
+  .comentar{
     float:left;
     height:20%;
     width:20%;
@@ -149,11 +147,12 @@ nav li {
     margin-top:1%;
   }
 
-  #comentar img{
+  .comentar img{
     width: 100%;
     height: 100%;
   }
-  #compartir{
+  
+  .compartir{
     float:left;
     height:20%;
     width:20%;
@@ -161,7 +160,7 @@ nav li {
     margin-top:1%;
   }
 
-  #compartir img{
+  .compartir img{
     width: 100%;
     height: 100%;
   }
@@ -189,7 +188,6 @@ nav li {
     width:85%;
     border:4px solid black;
     float: left;
-    color: black;
     margin: 4%;
     background-color: white;
   }
