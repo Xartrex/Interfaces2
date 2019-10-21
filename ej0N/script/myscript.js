@@ -1,6 +1,6 @@
 $(document).ready(function(){
 
- // When the user clicks on <div>, open the popup
+ // When the user clicks on <div>, close the box
  $('.cruz').on('click', function(){
       if(confirm('¿Seguro que quieres borrar la caja?'))
       this.parentElement.style.display = 'none';
@@ -20,10 +20,25 @@ $('.like').on('click', function(){
   });
 
   $('.compartir').on('click', function(){
-    alert("hey");
-    alert(this.parentElement("div").sibling(".imagen").children("h2"));
+    alert("Iphone 11");
+    alert("Donde quieres compartirlo?");
   });
 
+$('#registrarse').on('click', function(){
+  $('.modal_oscuro').css("visibility", "visible");
+  $('.modal-contenido1').css("visibility", "visible");
+});
+
+$('#iniciar').on('click', function(){
+  $('.modal_oscuro').css("visibility", "visible");
+  $('.modal-contenido2').css("visibility", "visible");
+});
+
+$('.close').on('click', function(){
+  $('.modal_oscuro').css("visibility", "hidden");
+  $('.modal-contenido1').css("visibility", "hidden");
+  $('.modal-contenido2').css("visibility", "hidden");
+   });
 
 
 
