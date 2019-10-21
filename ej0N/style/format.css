@@ -30,6 +30,17 @@ nav li {
     color: white; /*text color*/
 
   }
+  #caja{
+
+    position: absolute;
+    height:200px;
+    width:30%;
+    border:3px solid black;
+    float: center;
+    margin-left:35%;
+    margin-top:15%;
+    background-color: white;
+  }
 
 
   h1{ /*Hace referencia al titulo de Iphone 11*/
@@ -48,6 +59,15 @@ nav li {
     margin-left: 70%;
     margin-top:10%;
     text-align: right;
+  }
+  h3{
+    height:50%
+    width:30%;
+    font-size:50%
+    margin-left: 70%;
+    margin-top:10%;
+    text-align: right;
+
   }
 
   #titulo{ /*Hace referencia a los otros dos titulos*/
@@ -151,7 +171,7 @@ nav li {
     width: 100%;
     height: 100%;
   }
-  
+
   .compartir{
     float:left;
     height:20%;
@@ -268,12 +288,44 @@ footer a{
 
 /*clases de los 3 pops up ----------------------------------*/
 
+/*.intereses{
+  overflow: auto;
+  display: block;
+}*/
+
+
+
+
 .modal-contenido{
   background-color:white;
   width:80%;
   height:70%;
   padding: 10px 20px;
   margin-left: 6%;
+  margin-top:10%;
+  margin-bottom: 15%;
+  z-index: 99; /*prioridad, se coloca encima del resto, se supone*/
+  overflow: auto;/*without scroll bar*/
+}
+.modal-contenido1{
+  border: 7px solid yellow;
+  background-color:white;
+  width:50%;
+  height:40%;
+  padding: 10px 20px;
+  margin-left: 25%;
+  margin-top:10%;
+  margin-bottom: 15%;
+  z-index: 99; /*prioridad, se coloca encima del resto, se supone*/
+  overflow: auto;/*without scroll bar*/
+}
+.modal-contenido2{
+  border: 7px solid red;
+  background-color:white;
+  width:30%;
+  height:30%;
+  padding: 10px 20px;
+  margin-left: 35%;
   margin-top:10%;
   margin-bottom: 15%;
   z-index: 99; /*prioridad, se coloca encima del resto, se supone*/

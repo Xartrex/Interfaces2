@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+    <html>
+    <head>
+      <title>Frex Movil</title>
+      <link rel = "stylesheet" href ="style/format.css"/>
+      <style type = "text/css"></style>
+      <meta charset="UTF-8"/>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+      <script src="https://code.jquery.com/ui/1.12.0/jquery-ui.min.js" integrity="sha256-eGE6blurk5sHj+rmkfsGYeKyZx3M4bG+ZlFyA7Kns7E=" crossorigin="anonymous"></script>
+      <script src="script/myscript.js"></script>
+
+    </head>
+    <body>
+      <nav id ="header">
+          <ul>
+              <div><li><a href="#miModal">Registrarse</a></li>
+                <div id="miModal" class="modal">
+                  <div class="modal-contenido1">
+                    <p><a href="#">X</a></p>
+                    <form action="ejemplo.php" method="get">
+                      <fieldset>
+                        <legend>Información de la cuenta></legend>
+                          <p>Usuario: <input type="text" name="usuario" minlength="1" required></p>
+                          <p>Contraseña: <input type="password" name="password" maxlength="8" placeholder="Máx. 8 caracteres" required></p>
+                        </fieldset>
+                      <fieldset>
+                        <legend>Información personal></legend>
+                          <p>Nombre: <input type="text" name="nombre" required></p>
+                          <p>Apellidos: <input type="text" name="apellidos" size="40" placeholder="Escriba sus dos apellidos" required></p>
+                          <p>Correo electrónico: <input type="email" name="correo" size="40" placeholder="e.g. interfaces@gmail.com"required></p>
+                          <p>Fecha: <input type="date" name="fecha" size="20" placeholder="dd/mm/aaaa" required></p>
+                          <p>Intereses: <select name="menu" size="5">
+                            <option value="0">...</option>
+                            <option value="1">Videojuegos</option>
+                            <option value="2">Seguridad</option>
+                            <option value="3">Bases de datos</option>
+                            <option value="4">Computadores</option>
+                            <option value="5">Inteligencia Artificial</option>
+                          </select></p>
+                          <p>Idiomas: <select name="menu" size="5">
+                            <option value="0">...</option>
+                            <option value="1">Español</option>
+                            <option value="2">Inglés</option>
+                            <option value="3">Alemán</option>
+                            <option value="4">Francés</option>
+                            <option value="5">Italiano</option>
+                          </select></p>
+                          <p>Uso de la aplicación:
+                          <textarea name="texto" rows="4" cols="40" placeholder="Escriba algo"></textarea>
+                          </p>
+                        </fieldset>
+
+                          <label><input type="checkbox" name="casilla" required>He leído y acepto las condiciones de uso</label>
+                        <p>
+                          <input type="submit" value="Guardar">
+                          <input type="reset" value="Borrar">
+                        </p>
+                    </form>
+                  </div>
+                </div>
+              </div>
+              <div><li><a href="#miModal2">Iniciar sesión</a></li>
+                <div id="miModal2" class="modal">
+                  <div class="modal-contenido2">
+                    <p><a href="#">X</a></p>
+                      <form action="ejemplo1.php" method="get">
+                          <p>Correo electrónico: <input type="email" name="correo" size="40" placeholder="e.g. interfaces@gmail.com"required></p>
+                          <p>Contraseña: <input type="password" name="password" maxlength="8" placeholder="Máx. 8 caracteres" required></p>
+                          <button><input type="submit" value="Iniciar sesión"></button>
+                  </div>
+                </div>
+              </div>
+              <li><a href="./index.html;">Adjust</a></li>
+              <li><a href="https://wikipedia.es">Wiki</a></li>
+              <li><a href="https://google.es">Google</a></li>
+          </ul>
+      </nav>
+
+
+
+    </body>
+    </html>

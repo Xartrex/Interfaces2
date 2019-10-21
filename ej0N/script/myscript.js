@@ -2,7 +2,7 @@ $(document).ready(function(){
 
  // When the user clicks on <div>, open the popup
  $('.cruz').on('click', function(){
-      if(confirm('¿Seguro que quieres borar la caja?'))
+      if(confirm('¿Seguro que quieres borrar la caja?'))
       this.parentElement.style.display = 'none';
       else;
     });
@@ -23,7 +23,10 @@ $('.like').on('click', function(){
     alert("hey");
     alert(this.parentElement("div").sibling(".imagen").children("h2"));
   });
-  
+
+
+
+
 
 
 });
