@@ -19,20 +19,23 @@ $('.like').on('click', function(){
   $(this).children("div").children("img").attr("src","images/like.jpg");*/
   });
 
+
   $('.compartir').on('click', function(){
-    alert("Iphone 11");
-    alert("Donde quieres compartirlo?");
+    var x = ($(this).parent().parent().parent().find("div.imagen h2").html());
   });
+
 
 $('#registrarse').on('click', function(){
   $('.modal_oscuro').css("visibility", "visible");
   $('.modal-contenido1').css("visibility", "visible");
 });
 
+
 $('#iniciar').on('click', function(){
   $('.modal_oscuro').css("visibility", "visible");
   $('.modal-contenido2').css("visibility", "visible");
 });
+
 
 $('.close').on('click', function(){
   $('.modal_oscuro').css("visibility", "hidden");
