@@ -566,8 +566,6 @@ td{
 .pops2{
   width: 800px;
   height: 500px;
-  margin-left: 20%;
-  margin-top: 6%;
   background: rgb(35, 197, 175);
   position: absolute;
   visibility: visible;
@@ -576,13 +574,12 @@ td{
   position: absolute;
   color: black;
   text-align: center;
-  margin: 0px auto;
   background-color: green;
   height: 100px;
   width: 200px;
 }
 .titlee h2{
-  align-content: center;
+  align-content: right;
 }
 
 .im{
