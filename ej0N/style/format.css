@@ -62,12 +62,6 @@ nav li {
   }
   h3{
     height:50%
-    width:30%;
-    font-size:50%
-    margin-left: 70%;
-    margin-top:10%;
-    text-align: right;
-
   }
 
   #titulo{ /*Hace referencia a los otros dos titulos*/
@@ -107,14 +101,33 @@ nav li {
     float: right;
   }
 
+  .mininav{
+    width: 100%;
+    height: 50px;
+
+  }
   .cruz{ /*cruz roja de los divs*/
     height: 5%;
     width: 5%;
     float:left;
-    margin-left:90%;
+    padding: 3%;
   }
 
   .cruz img{
+    width: 30px;
+    height: 30px;
+    float: left;
+  }
+
+  .ajustes{
+    margin-right: 6%;
+    margin-top: 2%;
+    height: 5%;
+    width: 5%;
+    float:right;
+  }
+
+  .ajustes img{
     width: 30px;
     height: 30px;
     float: left;
@@ -618,10 +631,25 @@ td{
   height: 100%;
   width: 100%;
 }
-
-.dropdown:hover .dropdown-content {
-  display: block;
+.dropdown-comment {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  z-index: 1;
 }
+.dropdown-comment p {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: inherit;
+}
+
+.dropdown-comment p:hover {
+  background-color: #f1f1f1
+}
+
+
 .añadir{
   margin-left: 40%;
   width: 20%;
@@ -630,6 +658,12 @@ td{
 .añadir img{
   height: 100%;
   width: 100%;
+}
+
+.addbox{
+  height:5%;
+  width: 50%;
+  background-color: white;
 }
 
 #new{
@@ -699,3 +733,77 @@ td{
   height: 30px;
   float: left;
 }
+
+/*clases de los 3 pops up ----------------------------------*/
+
+/*.intereses{
+  overflow: auto;
+  display: block;
+}*/
+
+#user{
+  background-color: lightblue;
+
+}
+#password{
+  background-color: lightblue;
+}
+#name{
+  background-color: lightblue;
+}
+#surname{
+  background-color: lightblue;
+}
+#email{
+  background-color: lightblue;
+}
+#date{
+  background-color: lightblue;
+}
+#interest{
+  background-color: lightblue;
+
+}
+#language{
+  background-color: lightblue;
+}
+#uso{
+  background-color: lightblue;
+}
+#correoInicioSesion{
+  background-color: lightblue;
+}
+#contraseñaInicioSesion{
+  background-color: lightblue;
+}
+
+#guardar{
+  height: 20%;
+  width: 20%;
+  padding:1rem;
+  text-align: center;
+  border-radius: 5px;
+  margin-top: 5%;
+  margin-left: 15%;
+}
+#borrar{
+  height: 20%;
+  width:20%;
+  padding:1rem;
+  text-align: center;
+  border-radius: 5px;
+  margin-top: 5%;
+  margin-left: 15%;
+}
+#login{
+  height: 20%;
+  width: 20%;
+  display: inline-block;
+  padding:1rem;
+  text-align: center;
+  border-radius: 5px;
+  border: 1.5px solid lightgrey;
+  margin-top: 1%;
+  margin-left: 35%;
+}
+
