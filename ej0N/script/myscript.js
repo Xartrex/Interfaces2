@@ -1,7 +1,7 @@
 $(document).ready(function(){
 
-  $('.caja').arrangeable();
-  $('.card').arrangeable();
+  $('.columna').arrangeable();
+  $('#hijo').arrangeable();
 
   var x = localStorage.getItem('user');
   $('#namee').find('p').html(x);
@@ -133,62 +133,6 @@ function jump(){
       window.open('index.html', '_self');
     }
 
-/*  console.log("hola");
-  var d = new Date();
-  d.setTime(d.getTime() + (exdays * 24 * 60 * 60 * 1000));
-  var expires = "expires="+d.toUTCString();
-  document.cookie = "formulario" + "=" + document.getElementById("#user").value + "&"+ document.getElementById("#password").value+ "&"+ document.getElementById("#name").value+"&"+ document.getElementById("#surname").value+"&"+ document.getElementById("#email").value+"&"+ document.getElementById("#date").value+"&"+ document.getElementById("#interest").value+"&"+ document.getElementById("#language").value+"&"+ document.getElementById("#uso").value + ";" +  expires + ";path=/";
-}
-
-function getCookie(posicion) {
-  var formulario = "formulario" + "=";
-  var ca = document.cookie.split(';');
-  for(var i = 0; i < ca.length; i++) {
-    var c = ca[i];
-    while (c.charAt(0) == ' ') {
-      c = c.substring(1);
-    }
-    if (c.indexOf(formulario) == 0) {
-      return getsubString(c.substring(formulario.length, c.length), posicion);
-    }
-  }
-  return "";
-}
-//se divide el formulario dentro de la cookie
-function gesubSubstring(formulario, posicion){
-  var ca = formulario.split('&');
-    return ca[posicion];
-}
-
-function checkCookie() {
-  var user = getCookie("username");
-  if (user != "") {
-    alert("Bienvenido de nuevo" + user);
-  } else {
-    user = prompt("Please enter your name:", "");
-    if (user != "" && user != null) {
-      setCookie("username", user, 365);
-    }
-  }
-}
-
-function checkInicioSesion(){
-
-  var email = getCookie(4);//posicion del array de la cookie en la que se encuentra el correo electronico
-  var password = getCookie(1);//posicion del array de la cookie en la que se encuentra la contraseña
-
-  if(email != document.getElementById("#correoInicioSesion").value) {
-    alert("El correo introducido es incorrecto");
-  }
-  if(password != document.getElementById("contraseñaInicioSesion").value) {
-    alert("El correo introducido es incorrecto");
-  }else{
-    document.location.href = "./index.html";
-  }
-
-
-}
-*/
 
 
 
