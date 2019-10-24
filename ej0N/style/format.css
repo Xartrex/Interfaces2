@@ -8,7 +8,27 @@
     width: 100%;
 }
 
+#cara{
+  float: left;
+  margin-left: 3%;
+  height: 100%;
+  width: 5%;
+}
 
+#cara img{
+  height: 100%;
+  width: 100%;
+}
+
+#namee{
+  font-size: 20px;
+  color: white;
+  text-align: center;
+  float: left;
+  margin-left: 1%;
+  height: 75%;
+  width: 10%;
+}
 nav li a {
     float: right;
     background-color: transparent;
@@ -756,6 +776,7 @@ td{
 }
 #email{
   background-color: lightblue;
+
 }
 #date{
   background-color: lightblue;
@@ -805,5 +826,5 @@ td{
   border: 1.5px solid lightgrey;
   margin-top: 1%;
   margin-left: 35%;
+  color: black;
 }
-

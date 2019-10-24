@@ -1,5 +1,10 @@
 $(document).ready(function(){
 
+  $('.caja').arrangeable();
+  $('.card').arrangeable();
+
+  var x = localStorage.getItem('user');
+  $('#namee').find('p').html(x);
 
    // When the user clicks on <div>, close the box
    $('.cruz').on('click', function(){
@@ -72,10 +77,10 @@ $(document).ready(function(){
     $('.modal_oscuro').fadeIn("slow");
   });
 
- 
 
 
-/*COOKIES*/ 
+
+/*COOKIES*/
 
 $('body').on('click', '#guardar', function(){
 
@@ -109,14 +114,12 @@ $('body').on('click', '#guardar', function(){
 
 });
 
-$('.body').on('click', '#login', function(){
+$('#login').on('click', function(){
 
+  if(localStorage.getItem('#email') == $('email').val() && localStorage.getItem('#password') == $('password').val()){
 
-  if(localStorage.getItem('email') == $('#email').val() && localStorage.getItem('password') == $('#password').val()){
+    window.open('index.html', '_self');
 
-    jump();
-    var url = "./index.html";
-    $(location).attr('href', url);
 
 
   }else{
